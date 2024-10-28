@@ -1,2 +1,10 @@
-# android_device_samsung_a20e
-Galaxy A20e | Work In Progress
+# Android device tree for samsung SM-A202F (a20e)
+
+```
+#
+# Copyright (C) 2024 The Android Open Source Project
+# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
