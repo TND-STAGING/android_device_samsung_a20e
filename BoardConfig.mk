@@ -50,6 +50,16 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := a20e_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/a20e
 
+# mkbootimg
+BOARD_MKBOOTIMG_ARGS:= \
+--board=SRPWE22A005 \
+--dtb_offset=0x01f00000 \
+--kernel_offset=0x00008000 \
+--ramdisk_offset=0x01000000 \
+--tags_offset=0x00000100 \
+--header_version=$(BOARD_BOOTIMG_HEADER_VERSION) \
+--dtb=$(TARGET_PREBUILT_DTB)
+
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
