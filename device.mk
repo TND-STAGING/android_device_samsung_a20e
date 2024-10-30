@@ -9,7 +9,7 @@ LOCAL_PATH := device/samsung/a20e
 
 # fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock \
     fastbootd 
 
 PRODUCT_PACKAGES += \
